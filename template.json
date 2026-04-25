@@ -1,0 +1,23 @@
+{
+  "template_name": "ASP-E1 Agent Identity Profile Normalizer",
+  "extends": "ASP",
+  "version": "1.0",
+  "description": "Normalizes, validates, and canonicalizes incoming agent identity packets to ensure deterministic formatting and compatibility across the ecosystem.",
+  "inputs": {
+    "raw_identity_packet": "Unprocessed agent identity data requiring normalization"
+  },
+  "outputs": {
+    "normalized_identity_packet": "Clean, validated, canonicalized identity packet conforming to ASP standards"
+  },
+  "rules": {
+    "enforce_required_fields": true,
+    "strip_unknown_fields": true,
+    "canonical_formatting": true,
+    "strict_validation": true
+  },
+  "economics": {
+    "micropayment_required": true,
+    "billing_event": "identity_normalization"
+  }
+}
+
