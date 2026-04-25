@@ -1,5 +1,15 @@
 # ASP‑E1 — Agent Identity Profile Normalizer
 
+ASP‑E1 is an extension of the Agent State Packet (ASP) that standardizes,
+validates, and canonicalizes incoming agent identity packets. This ensures
+every agent entering the ecosystem conforms to a single deterministic identity
+format, enabling consistent downstream processing and reliable multi‑agent
+interoperability.
+
+This template is machine‑only, zero‑contact, and revenue‑generating by design.
+
+---
+
 ## Overview
 ASP‑E1 extends the Agent State Packet (ASP) by providing deterministic
 normalization, validation, and canonicalization of incoming agent identity
@@ -27,4 +37,3 @@ Each invocation triggers a micropayment under the event:
 ## Extension Relationship
 This template inherits from and extends the ASP root template without
 modifying or altering the frozen ASP schema.
-
